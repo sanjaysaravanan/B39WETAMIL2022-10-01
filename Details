@@ -1,0 +1,47 @@
+Topics:
+
+  ordering columns:
+    ordering the columns based on screening/prefix
+    eg: order-0 order-md-1 order-sm-2
+
+
+  Document - 
+
+  style:
+    set any style prop value
+  
+  setAttribute:
+    set an attribute to element/node/tag
+
+  document.createElement
+    accepts tag name as string and create the tag for use
+
+  innerHTML vs innerText
+
+    innerHTML --> renders the string value by marking up any tags in string
+    innerText --> renders only the string value without any marking up
+
+
+  appendChild vs append
+
+    appendChild ---> takes only element as an arguement and adds as child to the calling tag
+    and returns the appended tag
+
+    append ---> takes one/more elements as arguments and adds all the arguments as child to the calling tag and returns nothing (undefined)
+
+  
+  getElementById --> why unique ID for all the nodes/elements/tags
+    always returns the first element which has the id
+
+  getElementByClassName:
+    return a htmlcollection with all the elements with passed classname
+
+  querySelector vs querySelectorAll:
+
+    querSelector:
+      returns the first matching elements 
+      eg: .common-class ---> return the first element which has classname common-class
+    
+    querSelectorAll:
+      returns the all matching elements 
+      eg: .common-class ---> return all the elements which has classname common-class
