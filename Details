@@ -6,20 +6,35 @@ Topics:
 
 
   Document - 
+  DOM --> Document Object Model
+  HTML
+    | ---> HEAD
+            | ---> META, TITLE 
+    | ---> BODY
+            | ---> P, A, DIV, H1
+            
+  DOM is used to manipulate based on the user interaction
 
   style:
     set any style prop value
   
-  setAttribute:
+  classlist --> list of classes for an element/tag/node
+  
+  setAttribute: function take attributeName and values
     set an attribute to element/node/tag
+    eg: set src for an image element (imgEle) image-url --> https://flagcdn.com/w320/is.png
+      imgEle.setAttribute('src', 'https://flagcdn.com/w320/is.png');
 
   document.createElement
     accepts tag name as string and create the tag for use
+    eg: create new h1 tag with B39WETAMIL as content
+      var h1Ele = document.createElement('h1');
+      h1Ele.innerText = 'B39WETAMIl';
 
   innerHTML vs innerText
 
-    innerHTML --> renders the string value by marking up any tags in string
-    innerText --> renders only the string value without any marking up
+    innerHTML --> renders the string value by marking up any tags in string (<h1>String</h1>) string (as h1)
+    innerText --> renders only the string value without any marking up (<h1>string</h1>) <h1>string</h1>
 
 
   appendChild vs append
@@ -33,7 +48,7 @@ Topics:
   getElementById --> why unique ID for all the nodes/elements/tags
     always returns the first element which has the id
 
-  getElementByClassName:
+  getElementsByClassName:
     return a htmlcollection with all the elements with passed classname
 
   querySelector vs querySelectorAll:
